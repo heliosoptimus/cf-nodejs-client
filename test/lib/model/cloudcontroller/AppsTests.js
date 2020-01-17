@@ -8,8 +8,8 @@ var chai = require("chai"),
     expect = require("chai").expect;
 chai.use(chaiAsPromised);
 
-var argv = require('optimist').demand('config').argv;
-var environment = argv.config;
+var argv = require('optimist').demand('envconfig').argv;
+var environment = argv.envconfig;
 console.log("Environment: " + environment);
 var nconf = require('nconf');
 nconf.argv().env().file({ file: 'config.json' });

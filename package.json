@@ -10,9 +10,9 @@
     "lint": "eslint ./lib/model/**/*.js ./lib/utils/*.js",
     "lint:fix": "eslint --fix ./lib/model/**/*.js ./lib/utils/*.js",
     "test": "npm run lint && npm run test:bluemix",
-    "test:local": "mocha test --config=LOCAL_INSTANCE_1",
-    "test:pws": "mocha test --config=PIVOTAL",
-    "test:bluemix": "mocha test --config=BLUEMIX"
+    "test:local": "mocha test --envconfig=LOCAL_INSTANCE_1",
+    "test:pws": "mocha test --envconfig=PIVOTAL",
+    "test:bluemix": "mocha test --envconfig=BLUEMIX"
   },
   "homepage": "https://github.com/IBM-Bluemix/cf-nodejs-client",
   "repository": {
@@ -44,7 +44,7 @@
     "eslint": "^2.11.1",
     "eslint-config-strongloop": "^2.0.1",
     "istanbul": "0.4.5",
-    "mocha": "2.3.4",
+    "mocha": "6.2.2",
     "nconf": "0.8.2",
     "optimist": "0.6.1",
     "random-words": "0.0.1"
