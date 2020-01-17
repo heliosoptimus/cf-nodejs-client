@@ -7,8 +7,8 @@ var chai = require("chai"),
     expect = require("chai").expect;
 var randomWords = require('random-words');
 
-var argv = require('optimist').demand('config').argv;
-var environment = argv.config;
+var argv = require('optimist').demand('envconfig').argv;
+var environment = argv.envconfig;
 var nconf = require('nconf');
 nconf.argv().env().file({ file: 'config.json' });
 
